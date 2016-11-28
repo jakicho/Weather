@@ -1,0 +1,150 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    tools:context="com.tran.weather.fragments.details.TempFragment">
+
+    <android.support.v7.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="3"
+        app:rowCount="5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:textColor="@color/colorAccent"
+            android:text="Temperature"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_columnSpan="3"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="Morning"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2"
+            android:id="@+id/textView2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="Day"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="Max."
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="Evening"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="Night"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="Min."
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="0" />
+
+        <TextView
+            android:id="@+id/text_temp_morn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="10°C"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:id="@+id/text_temp_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="10°C"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:id="@+id/text_temp_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:text="10°C"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:id="@+id/text_temp_eve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="10°C"
+            android:textSize="16sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:id="@+id/text_temp_night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="10°C"
+            android:textSize="16sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+        <TextView
+            android:id="@+id/text_temp_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:text="10°C"
+            android:textSize="16sp"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="2" />
+
+    </android.support.v7.widget.GridLayout>
+
+</android.support.v7.widget.CardView>

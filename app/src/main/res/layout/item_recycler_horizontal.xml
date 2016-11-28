@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_day"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="3dp"
+            android:text="day"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/txt_day"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_weather_icon"
+            android:layout_width="56dp"
+            android:layout_height="56dp" />
+
+        <TextView
+            android:id="@+id/txt_weather_description"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="weather description"
+            android:textSize="18sp"
+            android:layout_below="@+id/img_weather_icon"
+            android:layout_above="@+id/text_temp_max"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/text_temp_max"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20°"
+            android:textStyle="bold"
+            android:textSize="32sp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/text_temp_min"/>
+
+        <TextView
+            android:id="@+id/text_temp_min"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18°"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+
+
+        <!--
+                -->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
